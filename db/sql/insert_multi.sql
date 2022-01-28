@@ -30,74 +30,72 @@ INSERT INTO users (
         `updated_at`
     )
 VALUES (
-        (
-            'Emmanuelle',
-            'Jannie_Prosacco@hotmail.com',
-            '$2b$10$IpXuyUhdIDRQSw3AH7w53uUfRKq3YqMrVXiUviEpCuNP9iFEzF0Cu',
-            CURRENT_TIMESTAMP,
-            CURRENT_TIMESTAMP
-        ),
+        'Helen',
+        'Tomasa37@yahoo.com',
+        '$2b$10$K0YfkW16UdVrW1wEtf3d9OyMY4IHI1aQfFOAq5jGD0xNyAbZZf0I2',
+        CURRENT_TIMESTAMP,
+        CURRENT_TIMESTAMP
+    ),
 (
-            'Hassie',
-            'Nasir_Goodwin@gmail.com',
-            '$2b$10$sFJdDyRlkGJzInubGQVjaul6kfmhQwQ8DmGkc6jOWy1AjCBQEVBP.',
-            CURRENT_TIMESTAMP,
-            CURRENT_TIMESTAMP
-        ),
+        'Lurline',
+        'Rocky.Huels95@hotmail.com',
+        '$2b$10$0AvN5tGdHAok3NaNv/eOPeFh9gM2EpUKKkkLvo5WYcU7RkhdfZ5vC',
+        CURRENT_TIMESTAMP,
+        CURRENT_TIMESTAMP
+    ),
 (
-            'Florida',
-            'Brian78@yahoo.com',
-            '$2b$10$S3/Y479tIemFomICCxyqyuppnUuBSXjtaXygLbF8RuwDu/Z5PHCyq',
-            CURRENT_TIMESTAMP,
-            CURRENT_TIMESTAMP
-        ),
+        'Tracey',
+        'Shakira.Bednar@yahoo.com',
+        '$2b$10$JcT/6FRU8AkqkC/vdWsLruNtCpr0kVYCnG1ZiL1Qo/9RzvT/fVVWK',
+        CURRENT_TIMESTAMP,
+        CURRENT_TIMESTAMP
+    ),
 (
-            'Jaylen',
-            'Elisabeth.Crooks@gmail.com',
-            '$2b$10$Zz9m7Ys9BddyG/kuVkQPsOswLJclOZ7IChuTxm3Q0tA4PrpeLKF6y',
-            CURRENT_TIMESTAMP,
-            CURRENT_TIMESTAMP
-        ),
+        'Myles',
+        'Alayna_Sauer43@yahoo.com',
+        '$2b$10$J9RM/wgnNUB3m0J4IydSeOrBMT1U.L7vEhGVYwPYTmJTDoyCwuXxG',
+        CURRENT_TIMESTAMP,
+        CURRENT_TIMESTAMP
+    ),
 (
-            'Kaitlin',
-            'Everett_Sporer@hotmail.com',
-            '$2b$10$FArtDVfmBN3opmCxLbP58ORP6jB/WTL.oy5rXSKJeezCuTHUl4FeW',
-            CURRENT_TIMESTAMP,
-            CURRENT_TIMESTAMP
-        ),
+        'Barney',
+        'Madisen8@gmail.com',
+        '$2b$10$b7A/pyhdEgNfqWecO1jrLu8aC7qPn3vvv9mOzSHRtS4v3ons8GpaS',
+        CURRENT_TIMESTAMP,
+        CURRENT_TIMESTAMP
+    ),
 (
-            'Brando',
-            'Israel.Okuneva@gmail.com',
-            '$2b$10$LAw.tsfPnN8S2Lvk3m4JLuQU9iQ0E8aZlpd9khkz.h.dK7o3aw3NC',
-            CURRENT_TIMESTAMP,
-            CURRENT_TIMESTAMP
-        ),
+        'Kayden',
+        'Raymundo83@yahoo.com',
+        '$2b$10$MZQwQTxt9QAY6bYGJRoi0eX.lcr1fN6K8COZKclou1NNkgM6Bxl/O',
+        CURRENT_TIMESTAMP,
+        CURRENT_TIMESTAMP
+    ),
 (
-            'Louie',
-            'Ezra68@hotmail.com',
-            '$2b$10$wi6XCdpUyOzfkWFNLpJMGeEhxT1S7L0k9rc3WE/WrvoNDvX2/DzfG',
-            CURRENT_TIMESTAMP,
-            CURRENT_TIMESTAMP
-        ),
+        'Jovanny',
+        'Ashly.Doyle@gmail.com',
+        '$2b$10$QP1kqQRywEdr1Mey66/skumclkGIU/91haamMijiHS/m6wp6Gtnc.',
+        CURRENT_TIMESTAMP,
+        CURRENT_TIMESTAMP
+    ),
 (
-            'Enrico',
-            'Ashley_Daniel@yahoo.com',
-            '$2b$10$pnXAOJGmi5/DJJmcjVn9nuT8V05Ge2YObXSC6DGFPt4sgIAAWmKwC',
-            CURRENT_TIMESTAMP,
-            CURRENT_TIMESTAMP
-        ),
+        'Alexa',
+        'Hazel64@yahoo.com',
+        '$2b$10$L/lPZdeeRmDQqGCpN1ZJ.e7LMyIhQbbfK8NRRpVe3Y24qkHbvnzru',
+        CURRENT_TIMESTAMP,
+        CURRENT_TIMESTAMP
+    ),
 (
-            'Arch',
-            'Danial.Hills55@gmail.com',
-            '$2b$10$UHBInkDWtH7XW.WFJdQheeG8J65YU7f4w8xm94PJCtHEcjuBCZR8O',
-            CURRENT_TIMESTAMP,
-            CURRENT_TIMESTAMP
-        ),
+        'Ashleigh',
+        'Louisa_Olson96@yahoo.com',
+        '$2b$10$9UdNyQZMoQ9ENuGg2MXTD.wt5seOFYLe01BE4dhNm3xQreX/XlVMy',
+        CURRENT_TIMESTAMP,
+        CURRENT_TIMESTAMP
+    ),
 (
-            'Austin',
-            'Pascale.Will45@yahoo.com',
-            '$2b$10$6mloIq/xSI.e8yqCTBcSduGaz2cUcGzJXSZuKzP7KbmzTT/qKbWJm',
-            CURRENT_TIMESTAMP,
-            CURRENT_TIMESTAMP
-        )
+        'Mireya',
+        'Thaddeus.Lowe@gmail.com',
+        '$2b$10$NfPBLXV9hrlvxct5ZSwb7ulSMb.VXChnZUleclLt4mVfLj3nfw/7i',
+        CURRENT_TIMESTAMP,
+        CURRENT_TIMESTAMP
     )
