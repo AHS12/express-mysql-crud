@@ -1,0 +1,103 @@
+INSERT INTO `users` (
+        `id`,
+        `name`,
+        `email`,
+        `password`,
+        `created_at`,
+        `updated_at`
+    )
+VALUES (
+        NULL,
+        'Test Name',
+        'test@test.com',
+        '$2a$12$G0QA1yxQL9d2Bn3tpNquAut7s6D8HtuJ8joBSAFK/2Rb0yOeDni8C',
+        CURRENT_TIMESTAMP,
+        CURRENT_TIMESTAMP
+    ),
+    (
+        NULL,
+        'test name 2',
+        'test2@gmail.com',
+        '$2a$12$TJbdIYdGUWakwm7kEQZc7OewQtOqDoiRPhsmQ6x7/1SelQeXZsa7q',
+        CURRENT_TIMESTAMP,
+        CURRENT_TIMESTAMP
+    ) -- generated from code
+INSERT INTO users (
+        `name`,
+        `email`,
+        `password`,
+        `created_at`,
+        `updated_at`
+    )
+VALUES (
+        (
+            'Emmanuelle',
+            'Jannie_Prosacco@hotmail.com',
+            '$2b$10$IpXuyUhdIDRQSw3AH7w53uUfRKq3YqMrVXiUviEpCuNP9iFEzF0Cu',
+            CURRENT_TIMESTAMP,
+            CURRENT_TIMESTAMP
+        ),
+(
+            'Hassie',
+            'Nasir_Goodwin@gmail.com',
+            '$2b$10$sFJdDyRlkGJzInubGQVjaul6kfmhQwQ8DmGkc6jOWy1AjCBQEVBP.',
+            CURRENT_TIMESTAMP,
+            CURRENT_TIMESTAMP
+        ),
+(
+            'Florida',
+            'Brian78@yahoo.com',
+            '$2b$10$S3/Y479tIemFomICCxyqyuppnUuBSXjtaXygLbF8RuwDu/Z5PHCyq',
+            CURRENT_TIMESTAMP,
+            CURRENT_TIMESTAMP
+        ),
+(
+            'Jaylen',
+            'Elisabeth.Crooks@gmail.com',
+            '$2b$10$Zz9m7Ys9BddyG/kuVkQPsOswLJclOZ7IChuTxm3Q0tA4PrpeLKF6y',
+            CURRENT_TIMESTAMP,
+            CURRENT_TIMESTAMP
+        ),
+(
+            'Kaitlin',
+            'Everett_Sporer@hotmail.com',
+            '$2b$10$FArtDVfmBN3opmCxLbP58ORP6jB/WTL.oy5rXSKJeezCuTHUl4FeW',
+            CURRENT_TIMESTAMP,
+            CURRENT_TIMESTAMP
+        ),
+(
+            'Brando',
+            'Israel.Okuneva@gmail.com',
+            '$2b$10$LAw.tsfPnN8S2Lvk3m4JLuQU9iQ0E8aZlpd9khkz.h.dK7o3aw3NC',
+            CURRENT_TIMESTAMP,
+            CURRENT_TIMESTAMP
+        ),
+(
+            'Louie',
+            'Ezra68@hotmail.com',
+            '$2b$10$wi6XCdpUyOzfkWFNLpJMGeEhxT1S7L0k9rc3WE/WrvoNDvX2/DzfG',
+            CURRENT_TIMESTAMP,
+            CURRENT_TIMESTAMP
+        ),
+(
+            'Enrico',
+            'Ashley_Daniel@yahoo.com',
+            '$2b$10$pnXAOJGmi5/DJJmcjVn9nuT8V05Ge2YObXSC6DGFPt4sgIAAWmKwC',
+            CURRENT_TIMESTAMP,
+            CURRENT_TIMESTAMP
+        ),
+(
+            'Arch',
+            'Danial.Hills55@gmail.com',
+            '$2b$10$UHBInkDWtH7XW.WFJdQheeG8J65YU7f4w8xm94PJCtHEcjuBCZR8O',
+            CURRENT_TIMESTAMP,
+            CURRENT_TIMESTAMP
+        ),
+(
+            'Austin',
+            'Pascale.Will45@yahoo.com',
+            '$2b$10$6mloIq/xSI.e8yqCTBcSduGaz2cUcGzJXSZuKzP7KbmzTT/qKbWJm',
+            CURRENT_TIMESTAMP,
+            CURRENT_TIMESTAMP
+        )
+    )
