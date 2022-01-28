@@ -24,6 +24,8 @@ app.get('/', (req, res) => {
 });
 
 // require other route here.
+//user routes
+require('./routes/users.route')(app);
 
 // set port, listen for requests
 app.listen(port, () => {

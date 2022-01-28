@@ -91,10 +91,10 @@ User.findByName = (name, result) => {
     });
 }
 
-// Get all users search by name/email
-User.SearchUsers = (name, email, result) => {
+// Get all users search by email
+User.SearchUsers = (email, result) => {
 
-    sql.query(`SELECT * FROM ${TableName} WHERE name LIKE ? OR email LIKE ?`, [name, email], (err, res) => {
+    sql.query(`SELECT * FROM ${TableName} WHERE email LIKE ?`, [email], (err, res) => {
 
         if (err) {
             console.log(err);
