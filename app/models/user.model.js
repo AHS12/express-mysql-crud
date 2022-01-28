@@ -1,11 +1,12 @@
 const sql = require('../../db/connection');
+const bcrypt = require('bcrypt');
 
 const TableName = 'users';
 // constructor
-const User = (user) => {
+const User = function(user) {
     this.name = user.name;
     this.email = user.email;
-    this.password = user.password;
+    this.password = hashPassword(user.password);
     this.created_at = new Date();
     this.updated_at = new Date();
 }
@@ -21,18 +22,7 @@ const User = (user) => {
 //         });
 //     });
 // }
-User.create = (newUser, result) => {
-    sql.query(`INSERT INTO ${TableName} SET ?`, this, (err, res) => {
-        if (err) {
-            console.log(err);
-            result(err, null);
-            return;
-        }
-        console.log(res);
-        console.log('New user created: ', { id: res.insertId, ...newUser });
-        result(null, { id: res.insertId, ...newUser });
-    });
-}
+
 
 // Get a single user
 User.getUserById = (userId, result) => {
@@ -85,8 +75,15 @@ User.findByName = (name, result) => {
             return;
         }
 
-        console.log('Users: ', res);
-        result(null, res);
+        if (res.length) {
+            console.log('Found user: ', res[0]);
+            result(null, res[0]);
+            return;
+        }
+
+        // not found User with the name
+        result({ kind: 'not_found' }, null);
+        //result(null, res);
 
     });
 }
@@ -107,6 +104,20 @@ User.SearchUsers = (email, result) => {
 
     });
 
+}
+
+//insert a new user
+User.create = (newUser, result) => {
+    sql.query(`INSERT INTO ${TableName} SET ?`, newUser, (err, res) => {
+        if (err) {
+            console.log(err);
+            result(err, null);
+            return;
+        }
+        console.log(res);
+        console.log('New user created: ', { id: res.insertId, ...newUser });
+        result(null, { id: res.insertId, ...newUser });
+    });
 }
 
 // Update a user
@@ -154,6 +165,34 @@ User.delete = (id, result) => {
 
     });
 
+}
+
+//hash password
+function hashPassword(password){
+    const saltRounds = 10;
+    const hash = bcrypt.hashSync(String(password), saltRounds);
+    return hash;
+}
+
+//email exists
+User.emailExists = (email,result) => {
+    sql.query(`SELECT * FROM ${TableName} WHERE email = ?`, email, (err, res) => {
+        if (err) {
+            console.log(err);
+            result(null, err);
+            return false;
+        }
+
+        if (res.length) {
+            console.log('Found user: ', res[0]);
+            result(null, res[0]);
+            return;
+        }
+
+        // not found User with the name
+        result({ kind: 'not_found' }, null);
+
+    });
 }
 
 
