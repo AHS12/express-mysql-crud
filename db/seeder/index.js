@@ -1,33 +1,6 @@
-const mysql = require('mysql');
+const connection = require('../../db/connection');
 const { faker } = require('@faker-js/faker');
 const bcrypt = require('bcrypt');
-
-//load environment variables
-require('dotenv').config();
-
-// create a connection to the database with multiple statements for seeding
-console.log('Connecting to database...');
-
-const connection = mysql.createConnection({
-    host: process.env.DB_HOST,
-    user: process.env.DB_USERNAME,
-    password: process.env.DB_PASSWORD,
-    database: process.env.DB_DATABASE,
-    port: process.env.DB_PORT,
-    // multipleStatements: true,
-});
-
-// open the MySQL connection
-connection.connect((err) => {
-    if (err) {
-        console.error(`error connecting: ${err.stack}`);
-        return;
-    }
-    console.log(`connected as id ${connection.threadId}`);
-    //generateQuery('users',columns,generatUsers());
-});
-
-
 
 //hash password
 hashPassword = (password) => {
