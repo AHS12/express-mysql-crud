@@ -1,4 +1,11 @@
 {
+  "name": "express-crud-mysql",
+  "version": "1.0.0",
+  "description": "basic crud app with express mysql",
+  "main": "server.js",
+  "repository": "https://github.com/AHS12/express-mysql-crud.git",
+  "author": "Md Azizul Hakim <mdazizulhakim.cse@gmail.com>",
+  "license": "MIT",
   "devDependencies": {
     "eslint": "8.2.0",
     "eslint-config-airbnb-base": "15.0.0",
@@ -6,5 +13,10 @@
     "eslint-plugin-import": "2.25.2",
     "eslint-plugin-prettier": "^4.0.0",
     "prettier": "^2.5.1"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.2",
+    "mysql": "^2.18.1"
   }
 }
