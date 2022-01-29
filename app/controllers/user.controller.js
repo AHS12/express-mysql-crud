@@ -89,7 +89,7 @@ exports.searchUsersByEmail = (req, res) => {
 //create a new user
 exports.create = (req, res) => {
 
-    console.log(req.body);
+    //console.log(req.body);
     //basic validation
     if (!req.body.name || !req.body.email || !req.body.password) {
         res.status(422).send({
@@ -147,9 +147,59 @@ exports.create = (req, res) => {
 
 //update a user
 exports.update = (req, res) => {
+
+    //basic validation
+    if (!req.body.name || !req.body.email || !req.body.password) {
+        res.status(422).send({
+            message: 'Content can not be empty!'
+        });
+    }
+
+    //create user
+    const user = new User({
+        name: req.body.name,
+        email: req.body.email,
+        password: req.body.password
+    });
+
+    //update user in the database
+    User.updateById(req.params.id, user, (err, data) => {
+        if (err) {
+            if (err.kind === 'not_found') {
+                res.status(404).send({
+                    message: `User not found with id ${req.params.id}`
+                });
+            } else {
+                res.status(500).send({
+                    message: `Error updating user with id ${req.params.id}`
+                });
+            }
+        } else {
+            res.json({
+                data: data
+            });
+        }
+    });
 };
 
 
 //delete a user
 exports.delete = (req, res) => {
+    User.delete(req.params.id, (err, data) => {
+        if (err) {
+            if (err.kind === 'not_found') {
+                res.status(404).send({
+                    message: `User not found with id ${req.params.id}`
+                });
+            } else {
+                res.status(500).send({
+                    message: `Could not delete user with id ${req.params.id}`
+                });
+            }
+        } else {
+            res.json({
+                //message: `User deleted successfully!`
+            },204);
+        }
+    });
 };
